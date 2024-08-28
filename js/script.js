@@ -17,7 +17,7 @@ const createCell = (cellNumber) => {
 const onCellClick = (event) => {
   console.log(event.target.innerText);
   //   Aggiungo classe per colorare la cella
-  event.target.classList.add("clicked");
+  event.target.classList.toggle("clicked");
 };
 
 const startGame = (event) => {
