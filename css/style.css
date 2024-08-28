@@ -16,11 +16,11 @@
 /* Generics */
 
 body {
-  background-color: var(--aquagreen);
+  background-color: var(--aquagreen) !important;
 }
 
 header {
-  height: 10vh;
+  height: 15vh;
   padding: 15px;
   background-color: white;
   display: flex;
@@ -43,13 +43,13 @@ main {
 }
 
 .logo img {
-  height: 40px;
+  height: 50px;
   margin-right: 10px;
 }
 
 /* Controls */
 #play-button {
-  padding: 10px 15px;
+  padding: 5px 15px;
   border-radius: 5px;
   color: white;
   border: 1px solid dodgerblue;
@@ -73,4 +73,14 @@ main {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+
+#grid .cell {
+  width: 10%;
+  height: 10%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
