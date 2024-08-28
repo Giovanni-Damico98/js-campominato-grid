@@ -75,7 +75,7 @@ main {
   justify-content: center;
 }
 
-#grid .cell {
+.cell {
   width: 10%;
   height: 10%;
   border: 1px solid black;
@@ -83,4 +83,9 @@ main {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+.cell.clicked {
+  color: white;
+  background-color: dodgerblue;
 }
