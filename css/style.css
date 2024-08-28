@@ -89,3 +89,18 @@ main {
   color: white;
   background-color: dodgerblue;
 }
+
+#grid.easy .cell {
+  width: 10%;
+  height: 10%;
+}
+
+#grid.normal .cell {
+  width: calc(100% / 9);
+  height: calc(100% / 9);
+}
+
+#grid.hard .cell {
+  width: calc(100% / 7);
+  height: calc(100% / 7);
+}

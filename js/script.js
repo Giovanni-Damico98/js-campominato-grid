@@ -30,6 +30,9 @@ const startGame = (event) => {
   playButton.innerText = "Ricomincia";
   //Prendo il valore dalla tendina
   const level = levelSelect.value;
+  // Aggiungo la classe alla griglia rimuovendo quella precedente
+  grid.classList.remove("hard", "normal", "easy");
+  grid.classList.add(level);
   let rows;
   let cols;
   // Decido quante colonne e righe generare
@@ -46,9 +49,10 @@ const startGame = (event) => {
       rows = 10;
       cols = 10;
   }
+  const totalCells = rows * cols;
 
-  //   Genero 100 celle
-  for (let i = 1; i <= 100; i++) {
+  //   Genero le celle in base al livello scelto
+  for (let i = 1; i <= totalCells; i++) {
     // Creo una cella
     const cell = createCell(i);
     // Al click >
