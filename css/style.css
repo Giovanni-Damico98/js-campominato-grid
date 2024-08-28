@@ -20,14 +20,16 @@ body {
 }
 
 header {
-  height: 15vh;
+  height: 10vh;
   padding: 15px;
   background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
+h1 {
+  margin-bottom: 0 !important;
+}
 main {
   height: 90vh;
   display: flex;
@@ -49,7 +51,7 @@ main {
 
 /* Controls */
 #play-button {
-  padding: 5px 15px;
+  padding: 7px 15px;
   border-radius: 5px;
   color: white;
   border: 1px solid dodgerblue;
